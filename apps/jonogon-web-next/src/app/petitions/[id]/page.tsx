@@ -266,16 +266,8 @@ export default function Petition() {
                         size={'lg'}
                         className="flex-1 w-full"
                         onClick={clickThumbsUp}>
-                        {status === 'formalized' ? (
-                            <>
-                                <p className="ml-2">{upvoteCount} — VOTE</p>
-                            </>
-                        ) : (
-                            <>
-                                <ThumbsUp size={20} />{' '}
-                                <p className="ml-2">{upvoteCount}</p>
-                            </>
-                        )}
+                            <ThumbsUp size={20} />{' '}
+                            <p className="ml-2">{upvoteCount}</p>
                     </Button>
                     <Button
                         variant={
@@ -287,8 +279,8 @@ export default function Petition() {
                         className="flex-1 w-full"
                         size={'lg'}
                         onClick={clickThumbsDown}>
-                        <ThumbsDown size={20} />{' '}
-                        <p className="ml-2">{downvoteCount}</p>
+                            <ThumbsDown size={20} />{' '}
+                            <p className="ml-2">{downvoteCount}</p>
                     </Button>
                 </div>
             </div>
